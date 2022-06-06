@@ -1,0 +1,349 @@
+/* ------------------------------ FONT ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+
+/* ------------------------------ GLOBAL ---------- */
+*{
+    padding: 0;
+    margin:0;
+    font-size: 62.5%;
+    font-size: 1em;
+    box-sizing: border-box;
+}     
+
+body{
+    background-color: black;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.background_black {
+    background-color: black;
+}
+
+.button {
+    margin-top: 50px;
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+h1{
+    color: white;
+    
+    position: relative;
+    font-size: 2em;
+    top: 20px;
+    right: inherit;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    color: whitesmoke;
+    padding: 40px 0 0 0;
+    margin: 20px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 0.8em;
+}
+
+h3{
+    color: rgb(42, 128, 106);
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 0.7em;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    padding: 10px 0px 0px 60px;
+    font-size: 0.8em;
+}
+
+.enlaceDemo{
+    padding: 10px 0px 0px 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------ HEADER ---------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header img{
+    max-width: 100px;
+    padding: 10px 0 0 0;
+}
+
+.ilogo{
+    position: center;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+.ok{
+    color: rgb(42, 128, 106);
+    padding: 15px 0 0;   
+}
+
+.banner h3{
+    color: rgb(42, 128, 106);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+}
+
+
+/* ------------------------------ MAIN (BANNER) ---------- */
+/* inicio template grilla */
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header     header     header"
+    "banner     banner     banner"
+    "beneficios beneficios beneficios"
+    "footer     footer     footer";
+
+    grid-template-columns: 3, 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+/* inicio declaración areas */
+header{
+    grid-area: header;
+}
+
+section.banner{
+    grid-area: banner;
+}
+
+section#beneficios{
+    grid-area: beneficios;
+}
+
+footer{
+    grid-area: footer;
+}
+/* fin declaración areas */
+
+
+.banner{
+    display: flex;
+    height: 70vh;
+    padding: 2em;
+    background-image: url("../img/proveedor_01.jpg");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner .btex{
+    max-width: 700px;
+    text-align: left;
+    margin-left: 1fr;    
+}
+
+.banner p{
+    color: whitesmoke;
+    padding: 0;
+}
+
+.subtitle{
+    max-width: 400px;
+}
+
+/* ------------------------------ SECTION (BENEFICIOS)---------- */
+section{
+    font-size: large;
+}
+
+.beneficios p{
+    padding: 0px;
+    height: 20%;
+}
+
+.ok li{
+    margin: 10px;
+}
+
+.beneficios h3{
+    color: #038ff4;;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 40px 0 0 0;
+}
+
+.beneficios h2{
+    color: #038ff4;;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 40px 0 0 0;
+}
+
+.beneficios{
+    background-color: white;
+    padding: 20px;
+}
+
+.goodOne{
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.statistics h3{
+    color: #038ff4;
+}
+
+
+/* ------------------------------ FOOTER ---------- */
+footer{
+    color: rgb(90, 97, 104);
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocial{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer__social i {
+    font-size: 25px;
+}
+
+
+/* Casos de éxito */
+.casos{
+    background-position-x: center;
+    background-color: cadetblue;
+    padding: 100px 0px 100px 0px;   
+    text-align: center; 
+}
+
+.casos h1{
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px; 
+}
+
+.casos p{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 0px 0px 0px; 
+}
+
+.exitoEtf{
+    padding-top: 20px;
+    border-top: 5px solid black;
+    display: block;
+}
+
+.exitoEtf p{
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.picSubtitle{
+    padding-top: 40px;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.picGalery{
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.videoImport{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Recursos para inspirarse*/
+
+.actionFree{
+    display: inline-block;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.actionFree p{
+    text-align: center;
+}
+
+.catResourse{
+    background-color: mediumturquoise;
+    text-align: center;
+
+}
+
+.circles{
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    padding: 20px 0px 0px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.dot {
+    background-color: #bbb;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    padding: 40px 40px;
+  }
