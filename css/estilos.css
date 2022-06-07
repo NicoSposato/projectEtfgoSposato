@@ -34,8 +34,6 @@ body{
     font-weight: 600;
 }
 
-<<<<<<< HEAD
-=======
 /* Transformación de botón */
 button:hover {
     background-color: white;
@@ -49,7 +47,6 @@ button:hover {
     transition-duration: 1s;
 }
 
->>>>>>> efectos
 h1{
     color: white;
     
