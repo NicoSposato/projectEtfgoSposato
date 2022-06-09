@@ -14,10 +14,12 @@ body{
     background-color: black;
 }
 
+/* comento este estilo para no pisar el de BS
 .container {
     max-width: 1150px;
     margin: 0 auto;
 }
+*/
 
 .background_black {
     background-color: black;
