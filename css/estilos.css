@@ -269,6 +269,9 @@ footer{
     font-size: 25px;
 }
 
+footer a{
+    color: rgb(90, 97, 104);
+}
 
 /* Casos de éxito */
 .casos{
@@ -289,6 +292,12 @@ footer{
     text-align: center;
     font-size: 14px;
     padding: 0px 0px 0px 0px; 
+}
+
+.card-p{
+    position: relative;
+    text-align: center;
+    padding: 0%;
 }
 
 .exitoEtf{
@@ -355,3 +364,24 @@ footer{
     display: inline-block;
     padding: 40px 40px;
   }
+
+  /* Unirse */
+.unete{
+    background-position-x: center;
+    background-color: rgb(170, 22, 158);
+    padding: 100px 0px 100px 0px;   
+    text-align: center; 
+}
+
+.unete h1{
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px; 
+}
+
+.unete p{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 0px 0px 0px; 
+}
