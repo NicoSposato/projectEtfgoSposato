@@ -18,6 +18,8 @@ body{
     display: flex;
     flex: wrap;
     width: 100%;
+    text-align: center;
+    justify-content: center;
     margin-bottom: 3rem;
     margin-right: 1.5rem;
 }
@@ -146,39 +148,22 @@ a{
 
 
 /* ------------------------------ MAIN (BANNER) ---------- */
-/* inicio template grilla */
 
-#grilla{
-    display: grid;
-    grid-template-areas: 
-    "header     header     header"
-    "banner     banner     banner"
-    "beneficios beneficios beneficios"
-    "footer     footer     footer";
-
-    grid-template-columns: 3, 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.container-flex-left{
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+    padding-left: 7%;
 }
 
 
-/* inicio declaración areas */
-header{
-    grid-area: header;
-}
+.container-flex-left.btex{
 
-section.banner{
-    grid-area: banner;
+    margin-bottom: 3rem;
+    margin-right: 1.5rem; 
 }
-
-section#beneficios{
-    grid-area: beneficios;
-}
-
-footer{
-    grid-area: footer;
-}
-/* fin declaración areas */
-
 
 .banner{
     display: flex;
@@ -188,12 +173,6 @@ footer{
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-.banner .btex{
-    max-width: 700px;
-    text-align: left;
-    margin-left: 1fr;    
 }
 
 .banner p{
@@ -288,7 +267,7 @@ footer{
 .casos h1{
     position: relative;
     text-align: center;
-    padding: 0px 0px 0px 0px; 
+    padding: 0px 0px 20px 0px; 
 }
 
 .casos p{
@@ -300,11 +279,13 @@ footer{
 
 .exitoEtf{
     padding-top: 20px;
-    border-top: 5px solid black;
+    background-color: whitesmoke;
+    border-top: 5px solid whitesmoke;
     display: block;
 }
 
 .exitoEtf p{
+    padding-left: 0;
     margin-bottom: 40px;
     position: relative;
     text-align: center;
@@ -316,19 +297,81 @@ footer{
     max-width: 400px;
 }
 
-.picGalery{
-    max-height: 400px;
-    max-width: 400px;
+.cards {
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    justify-content: center;
+    gap: 40px; 
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    width: 230px;
+    border-radius: 15px ;
+}
+
+img {
+    max-width: 100%;
+    
 }
 
 .videoImport{
-    margin-top: 100px;
+    display: flex; 
+    justify-content: center;
+    display: inline-block;
+    gap: 40px; 
+    margin-top: 20px;
+    flex-wrap: nowrap; 
+}
+
+.videoImport #repro{
+    text-align: start;
+}
+
+.videoUx h3{
+    position: relative;
     text-align: center;
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 0px 0px 20px 0px; 
+}
+
+.videoUx h4{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 0px 50px 0px; 
 }
 
 /* Recursos para inspirarse*/
+#inspiracion{
+    background-position-x: center;
+    background-color: rgb(40, 45, 97);
+    padding: 100px 0px 100px 0px;   
+    text-align: center; 
+}
+
+#inspiracion h1{
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 20px 0px; 
+}
+
+#inspiracion p{
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 0px 0px 0px; 
+}
 
 .actionFree{
+    color: aqua;
     display: inline-block;
     padding: 20px 0px 20px 0px;
     text-align: center;
@@ -337,8 +380,12 @@ footer{
 
 .actionFree p{
     text-align: center;
+    padding-right: 3rem;
 }
 
+.actionFree #action{
+    display: inline-block;
+}
 .catResourse{
     background-color: mediumturquoise;
     text-align: center;
@@ -407,4 +454,25 @@ footer{
     max-width: 490px;
     margin-top: -50px;
     padding-bottom: 2vh;
+}
+
+/* Unete */
+.unete{
+    background-position-x: center;
+    background-color: rgb(170, 22, 158);
+    padding: 100px 0px 100px 0px;   
+    text-align: center; 
+}
+
+.unete h1{
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px; 
+}
+
+.unete p{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 0px 0px 0px; 
 }
