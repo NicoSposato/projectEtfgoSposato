@@ -160,7 +160,6 @@ a{
 
 
 .container-flex-left.btex{
-
     margin-bottom: 3rem;
     margin-right: 1.5rem; 
 }
@@ -173,6 +172,34 @@ a{
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+footer{
+    color: rgb(90, 97, 104);
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    margin-bottom: 3rem;
+    margin-right: 1.5rem; 
+}
+
+footer p{
+    padding-left: 10px;
+}
+
+.footerSocial{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer__social i {
+    font-size: 25px;
 }
 
 .banner p{
@@ -234,28 +261,6 @@ section{
     color: #038ff4;
 }
 
-
-/* ------------------------------ FOOTER ---------- */
-footer{
-    color: rgb(90, 97, 104);
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footerSocial{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
-.footer__social i {
-    font-size: 25px;
-}
-
-
 /* Casos de éxito */
 .casos{
     background-position-x: center;
@@ -274,6 +279,7 @@ footer{
     position: relative;
     text-align: center;
     font-size: 14px;
+    font-weight: 600;
     padding: 0px 0px 0px 0px; 
 }
 
@@ -393,22 +399,37 @@ img {
 }
 
 .circles{
-    height: 250px;
+    height: 200px;
     width: 250px;
     display: inline-block;
-    padding: 20px 0px 0px 20px;
+    padding: 5px 0px 0px 5px;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .dot {
-    background-color: #bbb;
-    border-radius: 50px;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    padding: 40px 40px;
+    color: black;
+    position: absolute; 
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    bottom:0;
+    left:0;
+
   }
+
+.img-circle{
+    width: 140px; 
+    height: 140px;
+    display:inline-block;
+    overflow: hidden;
+    height: 140px;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0 2px 0 2px #333;
+    box-shadow: 0 2px 0 2px #333;
+    border-radius:50%;
+}
 
   /* Soluciones */
 
@@ -456,7 +477,7 @@ img {
     padding-bottom: 2vh;
 }
 
-/* Unete */
+/* Inicio Unete */
 .unete{
     background-position-x: center;
     background-color: rgb(170, 22, 158);
@@ -476,3 +497,10 @@ img {
     font-size: 14px;
     padding: 0px 0px 0px 0px; 
 }
+
+form h2{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* Fin Unete */
