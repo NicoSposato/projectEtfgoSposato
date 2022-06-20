@@ -101,6 +101,40 @@ p{
 }
 
 /* ------------------------------ HEADER ---------- */
+/* inicio template grilla */
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "nav        nav        nav" 
+    "banner     banner     banner"
+    "beneficios beneficios beneficios"
+    "footer     footer     footer";
+
+    grid-template-columns: 3, 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+/* inicio declaración areas */
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: banner;
+}
+
+section#beneficios{
+    grid-area: beneficios;
+}
+
+footer{
+    grid-area: footer;
+}
+/* fin declaración areas */
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -166,7 +200,6 @@ a{
 
 .banner{
     display: flex;
-    height: 70vh;
     padding: 2em;
     background-image: url("../img/proveedor_01.jpg");
     background-position: absolute;
